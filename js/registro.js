@@ -10,7 +10,7 @@ function registrar() {
     var mensaje = document.getElementById("mensaje");
 
     var letras = /^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/;
-    var correoOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var correoOk = /^[^\s@]+@(gmail\.com|hotmail\.com|outlook\.com|live\.com|msn\.com)$/i;
     var numeros = /^[0-9]+$/;
 
     mensaje.innerText = "";
@@ -18,6 +18,18 @@ function registrar() {
 
     if (nombre == "") {
         mensaje.innerText = "El nombre es obligatorio.";
+        mensaje.className = "mensaje error";
+        return false;
+    }
+
+    if (nombre.length < 2) {
+        mensaje.innerText = "El nombre debe tener al menos 2 caracteres.";
+        mensaje.className = "mensaje error";
+        return false;
+    }
+
+    if (nombre.length > 30) {
+        mensaje.innerText = "El nombre no puede tener más de 30 caracteres.";
         mensaje.className = "mensaje error";
         return false;
     }
@@ -30,6 +42,18 @@ function registrar() {
 
     if (apellido == "") {
         mensaje.innerText = "El apellido es obligatorio.";
+        mensaje.className = "mensaje error";
+        return false;
+    }
+
+    if (apellido.length < 2) {
+        mensaje.innerText = "El apellido debe tener al menos 2 caracteres.";
+        mensaje.className = "mensaje error";
+        return false;
+    }
+
+    if (apellido.length > 30) {
+        mensaje.innerText = "El apellido no puede tener más de 30 caracteres.";
         mensaje.className = "mensaje error";
         return false;
     }
@@ -85,8 +109,11 @@ function registrar() {
     var nacimiento = new Date(fecha + "T00:00:00");
     var hoy = new Date();
     var edad = hoy.getFullYear() - nacimiento.getFullYear();
-    var aunNoCumple = hoy.getMonth() < nacimiento.getMonth() ||
-        (hoy.getMonth() == nacimiento.getMonth() && hoy.getDate() < nacimiento.getDate());
+
+    var aunNoCumple =
+        hoy.getMonth() < nacimiento.getMonth() ||
+        (hoy.getMonth() == nacimiento.getMonth() &&
+         hoy.getDate() < nacimiento.getDate());
 
     if (aunNoCumple) {
         edad--;
@@ -131,6 +158,7 @@ function registrar() {
 
     mensaje.innerText = "Cuenta creada. Ahora puedes iniciar sesión.";
     mensaje.className = "mensaje ok";
+
     alert("Registro correcto. Ahora inicia sesión.");
     window.location.href = "login.html";
 
