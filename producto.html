@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas El Volcán | Producto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="encabezado">
+        <div class="contenedor">
+
+            <a href="index.html" class="logo">
+                <img src="img/header.png" alt="Logo Gas El Volcán">
+                <h1>Gas El Volcán</h1>
+            </a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="login.html">Login</a>
+                <a href="registro.html">Registro</a>
+                <a href="carrito.html">Carrito</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="detalle-producto">
+
+            <img id="imagen-producto" src="img/gas11kg.png" alt="Producto">
+
+            <div class="informacion-producto">
+
+                <h2 id="nombre-producto">Gas</h2>
+
+                <p id="descripcion-producto">Cilindro de gas licuado.</p>
+
+                <strong id="precio-producto">$20.000</strong>
+
+                <p id="extra-producto">Despacho a domicilio en Chillán.</p>
+
+                <button type="button" id="btn-info" class="boton" onclick="mostrarInfo()">
+                    Ver más información
+                </button>
+
+                <div id="info-extra">
+                    <p>El cilindro se entrega lleno y listo para usar.</p>
+                    <p>El cambio se puede hacer en tu domicilio.</p>
+                    <p>Horario de despacho: lunes a sábado de 8:00 a 20:00.</p>
+                </div>
+
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" value="1" min="1">
+
+                <p id="total">Total: $20000</p>
+
+                <button type="button" class="boton" onclick="calcularTotal()">
+                    Calcular total
+                </button>
+
+                <button type="button" class="boton" onclick="agregarPedido()">
+                    Agregar
+                </button>
+
+                <p class="volver">
+                    <a href="productos.html">Volver al catálogo</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Gas El Volcán | Chillán, Región de Ñuble</p>
+    </footer>
+
+
+    <script src="js/producto.js"></script>
+
+</body>
+</html>

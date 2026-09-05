@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas El Volcán | Carrito</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="encabezado">
+        <div class="contenedor">
+
+            <a href="index.html" class="logo">
+                <img src="img/header.png" alt="Logo Gas El Volcán">
+                <h1>Gas El Volcán</h1>
+            </a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="login.html">Login</a>
+                <a href="registro.html">Registro</a>
+                <a href="carrito.html">Carrito</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="titulo">
+            <h2>Tu carrito</h2>
+            <p>Revisa los productos y el total de tu pedido.</p>
+        </section>
+
+        <section class="carrito-seccion">
+            <div id="lista-carrito"></div>
+
+            <div id="resumen-carrito" class="resumen-carrito">
+                <p>Total de productos: <strong id="cantidad-carrito">0</strong></p>
+                <p class="total-carrito">Total: <strong id="total-carrito">$0</strong></p>
+                <button type="button" id="vaciar-carrito" class="boton boton-secundario">Vaciar carrito</button>
+                <a href="productos.html" class="boton">Seguir comprando</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Gas El Volcán | Chillán, Región de Ñuble</p>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+
+</body>
+</html>

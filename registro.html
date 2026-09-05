@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas El Volcán | Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="encabezado">
+        <div class="contenedor">
+
+            <a href="index.html" class="logo">
+                <img src="img/gas11kg.png" alt="Logo Gas El Volcán">
+                <h1>Gas El Volcán</h1>
+            </a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="login.html">Login</a>
+                <a href="registro.html">Registro</a>
+                <a href="carrito.html">Carrito</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="titulo">
+            <h2>Crear cuenta</h2>
+            <p>Regístrate para usar la tienda y pedir gas.</p>
+        </section>
+
+
+        <form class="formulario" onsubmit="return registrar()" novalidate>
+
+            <p id="mensaje" class="mensaje"></p>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido">
+
+            <label for="correo">Correo electrónico</label>
+            <input type="text" id="correo" name="correo">
+
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono">
+
+            <label for="direccion">Dirección de despacho</label>
+            <input type="text" id="direccion" name="direccion">
+
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label for="clave">Contraseña</label>
+            <input type="password" id="clave" name="clave">
+
+            <label for="clave2">Confirmar contraseña</label>
+            <input type="password" id="clave2" name="clave2">
+
+            <button type="submit" class="boton">Registrarse</button>
+
+            <p class="enlace-form">
+                ¿Ya tienes cuenta?
+                <a href="login.html">Inicia sesión</a>
+            </p>
+
+            <p class="enlace-form">
+                <a href="index.html">Volver al inicio</a>
+            </p>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Gas El Volcán | Chillán, Región de Ñuble</p>
+    </footer>
+
+
+    <script src="js/registro.js"></script>
+
+</body>
+</html>
