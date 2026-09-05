@@ -22,7 +22,7 @@ La página busca facilitar la gestión de pedidos y mejorar el proceso de compra
 
 ## Proyecto
 
-Proyecto académico para la asignatura **DSY1104 – Desarrollo FullStack II**.
+Proyecto académico para la asignatura **DSY1104 – Desarrollo FullStack II**
 
 ## Empresa
 
