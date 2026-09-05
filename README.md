@@ -1,3 +1,5 @@
+![Logo de Gas El Volcán](img/banner.png)
+
 # Distribuidora Gas El Volcán
 
 Página web para la **Distribuidora de Gas El Volcán**, empresa dedicada a la venta y distribución de gas licuado a domicilio en Chillán.
